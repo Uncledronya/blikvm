@@ -1,0 +1,126 @@
+# links 
+https://wiki.blicube.com/blikvm/ru/BLIKVM-CM4-guide/#_2
+
+Download all soft and firmware
+
+#
+unzip usbboot-master.zip
+
+# unpack firmware
+
+install imager-1.7.5.exe
+
+
+# !!!
+set Jumper from 1-2 to 2-3 for run bootloader (to BOOT)
+
+
+#start rpiboot as Administrator
+
+install rpiboot_setup
+
+
+
+run PiKVM\usbboot-master\win32\rpiboot_setup
+
+#
+power on plikvm
+
+
+#Check connection
+
+
+# run pi Imager
+
+	Choose OS
+	Use custom
+	Select image v3-hdmi-rpi4-latest.img
+	Choose storage (Look like as RPI-MSD .....)
+	Press WRITE
+	Wait finish writing to Emmc
+
+
+# Power Off BliKVM
+
+#!!!
+set Jumper from 2-3 to 1-2 for run OS (NOT BOOT)
+
+# 
+Power ON
+
+
+#
+
+Login with ssh to BliKVM
+
+
+
+###############
+# Fixes
+
+# --------------------
+# Enable Oled Display
+# https://wiki.blicube.com/blikvm/en/OLED-display/
+
+rw
+systemctl enable --now kvmd-oled //Enable OLED
+ro
+
+# --------------------
+# Modifying PiKVM image to work with BliKVM hardware
+https://wiki.blicube.com/blikvm/en/modify_pikvm_image/
+
+# --------------------
+# Fan settings for BliKVM hardware
+https://github.com/ThomasVon2021/blikvm/tree/master/package/kvmd-fan
+
+# Fan settings for PiKVM
+https://github.com/pikvm/pikvm/issues/706
+
+
+
+
+
+
+
+power on plikvm
+run PiKVM\usbboot-master\win32\rpiboot_setup
+
+
+
+
+
+
+pikvm
+
+1. add internet to pikvm
+2. 
+
+
+How to flash Bli Kvm to piKvm
+https://wiki.blicube.com/blikvm/en/BLIKVM-CM4-guide/#basic-setup
+https://youtu.be/xypeC7Fne6Q
+
+https://docs.pikvm.org/flashing_os/
+
+
+Firmware last version
+https://files.pikvm.org/images/v3-hdmi-rpi4-latest.img.xz
+
+
+Modify PiKVM to BliKVM hardware work
+https://wiki.blicube.com/blikvm/en/modify_pikvm_image/
+
+
+
+
+Downloads
+
+https://github.com/raspberrypi/usbboot/archive/refs/heads/master.zip
+
+https://github.com/raspberrypi/rpi-imager/releases
+https://github.com/raspberrypi/rpi-imager/releases/download/v1.7.5/imager-1.7.5.exe
+
+
+#firmaware 
+https://files.pikvm.org/images/v3-hdmi-rpi4-latest.img.xz
