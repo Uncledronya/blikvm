@@ -33,14 +33,14 @@
 
     1 Run rpiboot as Administrator
 
-    2 Run "Raspberry Pi Imager" as Administrator and see screenshots below
-![alt text](Screenshot_1.png "Title")
-![alt text](Screenshot_2.png "Title")
-![alt text](Screenshot_3.png "Title")
-![alt text](Screenshot_4.png "Title")
-![alt text](Screenshot_5.png "Title")
-![alt text](Screenshot_6.png "Title")
-![alt text](Screenshot_7.png "Title")
+    2 Run "Raspberry Pi Imager" as Administrator and see screenshots below  
+![alt text](Screenshot_1.png "Title")  
+![alt text](Screenshot_2.png "Title")  
+![alt text](Screenshot_3.png "Title")  
+![alt text](Screenshot_4.png "Title")  
+![alt text](Screenshot_5.png "Title")  
+![alt text](Screenshot_6.png "Title")  
+![alt text](Screenshot_7.png "Title")  
     3 Power off BliKVM
 
     4 Set Jumper from 2-3 to 1-2 for run OS (NOT BOOT)
